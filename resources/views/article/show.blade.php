@@ -17,7 +17,7 @@
                     </a>
     
                     {{-- Delete Button --}}
-                    <form action="" method="POST" onsubmit="return confirm('Are you sure you want to delete this article?');">
+                    <form action="{{ route('article.destroy', $article->id)}}" method="POST" onsubmit="return confirm('Are you sure you want to delete this article?');">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="text-red-600 hover:text-red-800 font-medium">

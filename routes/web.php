@@ -23,6 +23,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/article/{article}', [ArticleController::class, 'show'])->name('article.show');
     Route::get('/article/{article}/edit', [ArticleController::class, 'edit'])->name('article.edit');
     Route::put('/article/{article}', [ArticleController::class, 'update'])->name('article.update');
+    Route::delete('/article/{article}', [ArticleController::class, 'destroy'])->name('article.destroy');
 
 });
 

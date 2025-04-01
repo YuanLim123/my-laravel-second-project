@@ -109,6 +109,7 @@ class ArticleController extends Controller
      */
     public function destroy(Article $article)
     {
+        
         //
     }
 }
